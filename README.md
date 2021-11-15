@@ -17,3 +17,6 @@ Music テーブルからアイテム取得。条件はJSONファイルに記載
 ```shell
 aws dynamodb query --table-name Music --key-conditions file://key-conditions.json
 ```
+
+📖 [ステップ 1: Python を使用してテーブルを作成する](https://docs.aws.amazon.com/ja_jp/amazondynamodb/latest/developerguide/GettingStarted.Python.01.html)  
+📖 [【Windows】Pythonをアップデートする](https://www.suzu6.net/posts/224-python-windows-update/)  

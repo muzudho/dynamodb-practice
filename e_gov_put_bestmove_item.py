@@ -16,7 +16,7 @@ def put_bestmove(your_name, secret, bestmove, dynamodb=None):
         Item={
             'yourName': your_name,
             'secret': secret,
-            # 'S'（文字列型）の 'bestmove' 属性を追加
+            # 属性は定義してなくても追加できる
             'bestmove': bestmove,
         }
     )
@@ -30,5 +30,6 @@ if __name__ == '__main__':
     movie_resp = put_bestmove("Kifuwarakaku", "kokokokoKOKOKOKO", "+7776FU")
     movie_resp = put_bestmove("Kifuwarube", "wwwwwwwwwwwwWWWWWWW", "+2726FU")
     movie_resp = put_bestmove("Kifuwaragyoku", "oOoOoOoOoOoOoO", "+5948OU")
+    movie_resp = put_bestmove("Kifuwarakei", "oOoOoOoOoOoOoO", "+2726FU")
     print("Put bestmove succeeded:")
     pprint(movie_resp, sort_dicts=False)

@@ -16,7 +16,7 @@ def put_bestmove(your_name, secret, bestmove, dynamodb=None):
         Item={
             'yourName': your_name,
             'secret': secret,
-            # 属性は定義してなくても追加できる
+            # 属性は定義してなくても追加できます
             'bestmove': bestmove,
         }
     )

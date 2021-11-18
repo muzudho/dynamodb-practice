@@ -1,5 +1,5 @@
 """
-python.exe e-gov-create-bestmove-table.py
+python.exe e_gov_create_bestmove_table.py
 """
 
 import boto3

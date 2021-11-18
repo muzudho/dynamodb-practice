@@ -1,5 +1,5 @@
 """
-python.exe e-gov-delete-bestmove-table.py
+python.exe e_gov_delete_bestmove_table.py
 """
 
 import boto3

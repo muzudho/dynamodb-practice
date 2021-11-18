@@ -1,5 +1,5 @@
 """
-python.exe e-gov-get-bestmove-item.py
+python.exe e_gov_get_bestmove_item.py
 """
 
 from pprint import pprint

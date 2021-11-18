@@ -1,5 +1,5 @@
 """
-python.exe e-gov-scan-bestmove-table.py
+python.exe e_gov_scan_bestmove_table.py
 """
 
 from pprint import pprint

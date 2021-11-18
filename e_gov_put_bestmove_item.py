@@ -1,5 +1,5 @@
 """
-python.exe e-gov-put-bestmove-item.py
+python.exe e_gov_put_bestmove_item.py
 """
 
 from pprint import pprint
@@ -16,7 +16,7 @@ def put_bestmove(your_name, secret, bestmove, dynamodb=None):
             'yourName': your_name,
             'secret': secret,
             # 'S'（文字列型）の 'bestmove' 属性を追加
-            'bestmove': {'S', bestmove},
+            'bestmove': bestmove,
         }
     )
     return response

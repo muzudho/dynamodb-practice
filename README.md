@@ -4,6 +4,13 @@
 
 📖　[AWSにデータベースサーバーってどうやって置くの（＾～＾）？](https://crieit.net/drafts/61890804402ea)  
 
+## Set up
+
+```shell
+pip install pprintpp
+pip install boto3
+```
+
 ## AWS CLI テスト
 
 ```shell

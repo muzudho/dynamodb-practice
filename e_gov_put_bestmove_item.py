@@ -8,11 +8,12 @@ import boto3
 
 def put_bestmove(your_name, secret, bestmove, dynamodb=None):
     if not dynamodb:
-        dynamodb = boto3.resource('dynamodb', endpoint_url="http://localhost:8000")
+        dynamodb = boto3.resource(
+            'dynamodb', endpoint_url="http://localhost:8000")
 
     table = dynamodb.Table('Bestmove')
     response = table.put_item(
-       Item={
+        Item={
             'yourName': your_name,
             'secret': secret,
             # 'S'（文字列型）の 'bestmove' 属性を追加
@@ -27,5 +28,7 @@ if __name__ == '__main__':
     movie_resp = put_bestmove("Kifuwarane", "bebebebebeYOYOYOYOYO", "+5958OU")
     movie_resp = put_bestmove("Kifuwarazusa", "bababababa00", "+5756FU")
     movie_resp = put_bestmove("Kifuwarakaku", "kokokokoKOKOKOKO", "+7776FU")
+    movie_resp = put_bestmove("Kifuwarube", "wwwwwwwwwwwwWWWWWWW", "+2726FU")
+    movie_resp = put_bestmove("Kifuwaragyoku", "oOoOoOoOoOoOoO", "+5948OU")
     print("Put bestmove succeeded:")
     pprint(movie_resp, sort_dicts=False)

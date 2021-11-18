@@ -20,3 +20,5 @@ aws dynamodb query --table-name Music --key-conditions file://key-conditions.jso
 
 📖 [ステップ 1: Python を使用してテーブルを作成する](https://docs.aws.amazon.com/ja_jp/amazondynamodb/latest/developerguide/GettingStarted.Python.01.html)  
 📖 [【Windows】Pythonをアップデートする](https://www.suzu6.net/posts/224-python-windows-update/)  
+
+📖 [Step 5: (Optional) Delete the Table](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.Python.05.html)  

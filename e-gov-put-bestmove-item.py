@@ -24,5 +24,8 @@ def put_bestmove(your_name, secret, bestmove, dynamodb=None):
 
 if __name__ == '__main__':
     movie_resp = put_bestmove("Muzudho", "abc1234", "+7776FU")
-    print("Put movie succeeded:")
+    movie_resp = put_bestmove("Kifuwarane", "bebebebebeYOYOYOYOYO", "+5958OU")
+    movie_resp = put_bestmove("Kifuwarazusa", "bababababa00", "+5756FU")
+    movie_resp = put_bestmove("Kifuwarakaku", "kokokokoKOKOKOKO", "+7776FU")
+    print("Put bestmove succeeded:")
     pprint(movie_resp, sort_dicts=False)
